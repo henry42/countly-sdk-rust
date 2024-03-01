@@ -1,0 +1,1 @@
+#include "countly-cpp/include/adapter.hpp"
