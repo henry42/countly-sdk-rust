@@ -63,7 +63,6 @@ pub fn cly_start(app_key: &str, url: &str) {
     let mut url = Url::parse(url).unwrap();
     let port = url.port().unwrap_or_else(|| if url.scheme() == "https" { 443 } else { 80 } );
     let _ = url.set_port(None);
-    let _ = url.set_path("");
     let host = format!("{}://{}", url.scheme(),url.host_str().unwrap());
 
     unsafe {

@@ -57,6 +57,8 @@ fn main() {
 
         .clang_arg("-I./countly-cpp/include")
 
+        .layout_tests(false)
+
         .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
 
         .generate()
